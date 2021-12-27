@@ -5,8 +5,8 @@ import classes from './Navlinks.module.css';
 const Navlinks = (props) => {
   return (
     <div className={classes.NavlinksContent}>
-      <Icon icon={`${props.icon}`} width="36" height="36" style={{flex: 0.2}}/>
-      <p style={{flex: 0.8, textAlign: 'center'}}>Home</p>
+      <Icon icon={`${props.icon}`} width="36" height="36" style={{padding: '0px 36px'}}/>
+      <p style={{padding: '0px 15px'}}>Home</p>
     </div>
   );
 };
