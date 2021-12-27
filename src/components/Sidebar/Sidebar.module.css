@@ -6,6 +6,8 @@
     flex-direction: column;
     width: 300px;
     margin: 5px 15px;
+    cursor: pointer;
+    user-select: none;
 }
 .logo {
     height: 85px;
@@ -29,6 +31,7 @@
     height: 100%;
     width: 100%;
 }
+
 .Navlinks {
     display: flex;
     flex-direction: column;

@@ -2,4 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    padding: 4px;
+}
+.iconsAndLabels:hover {
+    background: #ffffff;
 }
