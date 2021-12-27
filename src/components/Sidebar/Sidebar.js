@@ -21,31 +21,44 @@ const Sidebar = () => {
   ];
   const links = [
     {
-      icon: "ant-design:home-outlined",
+      icon: "ant-design:home-filled",
+      label: "Home"
     },
     {
-      icon: "ant-design:home-outlined",
+      icon: "ph:cards-fill",
+      label: "My Cards"
     },
     {
-      icon: "ant-design:home-outlined",
+      icon: "ri:exchange-fill",
+      label: "Transactions"
     },
     {
-      icon: "ant-design:home-outlined",
+      icon: "dashicons:welcome-write-blog",
+      label: "Apply Now"
     },
     {
-      icon: "ant-design:home-outlined",
+      icon: "ant-design:book-filled",
+      label: "Passbook"
     },
     {
-      icon: "ant-design:home-outlined",
+      icon: "ic:baseline-account-balance",
+      label: "Accounts"
     },
     {
-      icon: "ant-design:home-outlined",
+      icon: "bi:calculator-fill",
+      label: "Calculator"
     },
     {
-      icon: "ant-design:home-outlined",
+      icon: "fluent:mail-24-filled",
+      label: "Inbox"
     },
     {
-      icon: "ant-design:home-outlined",
+      icon: "clarity:settings-solid",
+      label: "Settings"
+    },
+    {
+      icon: "eva:power-outline",
+      label: "Logout"
     },
   ];
   return (
@@ -62,8 +75,8 @@ const Sidebar = () => {
           })}
         </div>
         <div className={classes.Navlinks}>
-          {links.map((link, idx) => {
-            return <Navlinks key={Math.random()} icon={link.icon} />;
+          {links.map((link) => {
+            return <Navlinks key={Math.random()} icon={link.icon} label={link.label}/>;
           })}
         </div>
         <div className={classes.bottomIcons}>

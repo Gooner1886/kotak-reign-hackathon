@@ -5,6 +5,19 @@
     border-radius: 10px;
     padding: 4px;
 }
-.iconsAndLabels:hover {
+.icons {
+    transition: 0.2s;
+    
+}
+.icons:hover {
     background: #ffffff;
+
+}
+.labels {
+    transition: 0.2s;
+
+}
+.labels:hover {
+    background: #ffffff;
+
 }
