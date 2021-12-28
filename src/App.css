@@ -16,3 +16,8 @@ p { font-family: Futura; font-size: 18px; font-style: normal; font-variant: norm
   flex-direction: row;
   /* justify-content: space-between; */
 }
+.third-row {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
