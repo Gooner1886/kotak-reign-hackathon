@@ -6,7 +6,7 @@ const MyCards = () => {
     return(
         <div className={classes.mycards}>
             <h2>My Cards</h2>
-            <img src={CardsImg} alt="Cards image" style={{height: '300px', width: '330px', borderRadius: '12px'}}/>
+            <img src={CardsImg} alt="credit card" style={{height: '300px', width: '330px', borderRadius: '12px'}}/>
         </div>
     );
 }

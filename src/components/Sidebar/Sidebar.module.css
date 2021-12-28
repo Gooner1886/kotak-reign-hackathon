@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: fit-content;
     flex-direction: column;
     width: 300px;
-    margin: 5px 15px;
+    margin: 25px 35px;
     cursor: pointer;
     user-select: none;
 }
@@ -17,20 +17,23 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    background: #f2f0f0;
+    background: white;
     border-radius: 12px;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 2.5px 2.5px #4242424a;
+    justify-content: flex-start;
+    align-items: center;
+    height: 750px;
 }
 .mainIcons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    width: 90%;
+    margin-top: 15px;
 }
 
 .Navlinks {
@@ -39,16 +42,19 @@
     width: 90%;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .bottomIcons {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 85%;
     justify-content: space-between;
     padding: 25px 0px 5px 0px;
+    margin-top: 100px;
 }
 .details {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }

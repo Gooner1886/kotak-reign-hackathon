@@ -4,10 +4,11 @@
     align-items: center;
     border-radius: 10px;
     padding: 4px;
+    justify-content: center;
 }
 .icons {
     transition: 0.2s;
-    
+
 }
 .icons:hover {
     background: #ffffff;

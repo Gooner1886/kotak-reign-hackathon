@@ -4,6 +4,7 @@ import Overview from "./components/Overview/Overview";
 import Sidebar from "./components/Sidebar/Sidebar";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import Transactions from "./components/Transactions/Transactions";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <TransactionHistory />
         </div>
       </div>
+      <Login />
     </div>
   );
 }

@@ -7,8 +7,8 @@ const Overview = (props) => {
   return (
     <div className={classes.overview}>
       <div className={classes.section}>
-        <h2>&#8377;1,95,000</h2>
-        <h4>Premier Account</h4>
+        <h2 style={{margin: 0, fontSize: '32px'}}>&#8377;1,95,000</h2>
+        <h4 style={{margin: 0, fontSize: '20px', color: '#646464'}}>Premier Account</h4>
         <div className={classes.percent}>
           <Icon
             icon="bi:arrow-up-right"
@@ -16,13 +16,13 @@ const Overview = (props) => {
             width="12"
             height="12"
           />
-          <p style={{ color: "#21c24e" }}>17.97%</p>
+          <p style={{ color: "#21c24e", margin: 0, fontSize: '20px', marginTop: '5px' }}>17.97%</p>
         </div>
       </div>
       <div className={classes.line}></div>
       <div className={classes.section}>
-        <h2>&#8377;22,000</h2>
-        <h4>ISA Savings</h4>
+        <h2 style={{margin: 0,  fontSize: '32px'}}>&#8377;22,000</h2>
+        <h4 style={{margin: 0, fontSize: '20px', color: '#646464'}}>ISA Savings</h4>
         <div className={classes.percent}>
           <Icon
             icon="bi:arrow-down-right"
@@ -30,16 +30,16 @@ const Overview = (props) => {
             width="12"
             height="12"
           />
-          <p style={{ color: "#ea5c3d" }}>11.43%</p>
+          <p style={{ color: "#ea5c3d", margin: 0,fontSize: '20px', marginTop: '5px'}}>11.43%</p>
         </div>
       </div>
       <div className={classes.line}></div>
       <div className={classes.section}>
-        <h2>&#8377;2,19,000</h2>
-        <h4>Other Savings</h4>
+        <h2 style={{margin: 0,  fontSize: '32px'}}>&#8377;2,19,000</h2>
+        <h4 style={{margin: 0, fontSize: '20px', color: '#646464'}}>Other Savings</h4>
         <div className={classes.percent}>
           <Icon icon="bi:arrow-right" color="#a5a5a5" width="12" height="12" />
-          <p style={{ color: "#a5a5a5" }}>0.00%</p>
+          <p style={{ color: "#a5a5a5", margin: 0, fontSize: '20px', marginTop: '5px' }}>0.00%</p>
         </div>
       </div>
       <div className={classes.line}></div>
