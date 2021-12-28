@@ -1,5 +1,6 @@
 .App {
   display: flex;
+  background-color: #f8f8f8;
   /* align-items: center; */
 }
 /*p { font-family: Futura; font-size: 18px; font-weight: normal; line-height: 26px; }*/

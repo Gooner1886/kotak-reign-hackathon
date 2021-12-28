@@ -3,18 +3,20 @@ import MyCards from "./components/MyCards/MyCards";
 import Overview from "./components/Overview/Overview";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Transactions from "./components/Transactions/Transactions";
+import Login from "./components/Login";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <div className="right-half">
-        <Overview />
-        <div className="second-row">
-          <Transactions />
-          <MyCards />
-        </div>
-      </div>
+      {/*<Sidebar />*/}
+      {/*<div className="right-half">*/}
+      {/*  <Overview />*/}
+      {/*  <div className="second-row">*/}
+      {/*    <Transactions />*/}
+      {/*    <MyCards />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
+        <Login />
     </div>
   );
 }
