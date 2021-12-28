@@ -1,6 +1,12 @@
 .App {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 p { font-family: Futura; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26px; }
 
+.right-half {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
