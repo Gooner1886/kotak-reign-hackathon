@@ -71,7 +71,7 @@ const Sidebar = () => {
       <div className={classes.SidebarContent}>
         <div className={classes.mainIcons}>
           {mainicons.map((mainIcon) => {
-            return <MainIcons key={Math.random()}icon={mainIcon.icon} label={mainIcon.label} />;
+            return <MainIcons key={Math.random()} icon={mainIcon.icon} label={mainIcon.label} />;
           })}
         </div>
         <div className={classes.Navlinks}>
@@ -82,12 +82,12 @@ const Sidebar = () => {
         <div className={classes.bottomIcons}>
           <Icon
             icon="healthicons:ui-user-profile-outline"
-            width="36"
-            height="36"
+            width="45"
+            height="45"
           />
           <div className={classes.details}>
-            <p style={{ margin: "0" }}>John Doe</p>
-            <p style={{ margin: "0" }}>22 Dec at 9:30 a.m</p>
+            <p style={{ margin: "0", textAlign: "left", fontSize: '28px'}}>John Doe</p>
+            <p style={{ margin: "0", color: "#828181" }}>22 Dec at 9:30 a.m</p>
           </div>
         </div>
       </div>

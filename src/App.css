@@ -2,7 +2,7 @@
   display: flex;
   /* align-items: center; */
 }
-p { font-family: Futura; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26px; }
+/*p { font-family: Futura; font-size: 18px; font-weight: normal; line-height: 26px; }*/
 
 .right-half {
   display: flex;
@@ -15,4 +15,8 @@ p { font-family: Futura; font-size: 18px; font-style: normal; font-variant: norm
   display: flex;
   flex-direction: row;
   /* justify-content: space-between; */
+}
+
+p {
+  font-family: 'Futura Md BT';
 }
