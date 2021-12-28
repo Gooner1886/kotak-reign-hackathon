@@ -10,3 +10,9 @@ p { font-family: Futura; font-size: 18px; font-style: normal; font-variant: norm
   height: 100%;
   width: 100%;
 }
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}

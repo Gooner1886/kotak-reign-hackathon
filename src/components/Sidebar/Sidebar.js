@@ -71,7 +71,7 @@ const Sidebar = () => {
       <div className={classes.SidebarContent}>
         <div className={classes.mainIcons}>
           {mainicons.map((mainIcon) => {
-            return <MainIcons icon={mainIcon.icon} label={mainIcon.label} />;
+            return <MainIcons key={Math.random()}icon={mainIcon.icon} label={mainIcon.label} />;
           })}
         </div>
         <div className={classes.Navlinks}>
