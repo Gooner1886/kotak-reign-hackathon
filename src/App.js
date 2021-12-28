@@ -20,7 +20,7 @@ function App() {
           <TransactionHistory />
         </div>
       </div>
-      <Login />
+      {/* <Login /> */}
     </div>
   );
 }

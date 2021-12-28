@@ -83,7 +83,7 @@ const TransactionHistory = () => {
                   margin: 0,
                   position: "absolute",
                   top: "905px",
-                  left: "510px",
+                  left: "540px",
                 }}
               >
                 Adidas
@@ -119,7 +119,7 @@ const TransactionHistory = () => {
                   margin: 0,
                   position: "absolute",
                   top: "985px",
-                  left: "510px",
+                  left: "540px",
                 }}
               >
                 McDonald's
@@ -160,7 +160,7 @@ const TransactionHistory = () => {
                   margin: 0,
                   position: "absolute",
                   top: "1060px",
-                  left: "510px",
+                  left: "540px",
                 }}
               >
                 Starbucks
@@ -201,7 +201,7 @@ const TransactionHistory = () => {
                   margin: 0,
                   position: "absolute",
                   top: "1135px",
-                  left: "510px",
+                  left: "540px",
                 }}
               >
                 Mitsubishi
@@ -237,7 +237,7 @@ const TransactionHistory = () => {
                   margin: 0,
                   position: "absolute",
                   top: "1210px",
-                  left: "510px",
+                  left: "540px",
                 }}
               >
                 Asus
