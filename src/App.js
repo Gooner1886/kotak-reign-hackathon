@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import Transactions from "./components/Transactions/Transactions";
 import Login from "./components/Login";
+import QuickTransfer from "./components/QuickTransfer/QuickTransfer";
 
 function App() {
   return (
@@ -18,9 +19,11 @@ function App() {
         </div>
         <div className="third-row">
           <TransactionHistory />
+          <QuickTransfer />
         </div>
       </div>
       {/* <Login /> */}
+      
     </div>
   );
 }
