@@ -8,20 +8,23 @@ import Login from "./components/Login";
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <div className="right-half">
-        <Overview />
-        <div className="second-row">
-          <Transactions />
-          <MyCards />
+    <>
+        <div className="App">
+            <Sidebar />
+            <div className="right-half">
+                <Overview />
+                <div className="second-row">
+                    <Transactions />
+                    <MyCards />
+                </div>
+                <div className="third-row">
+                    <TransactionHistory />
+                </div>
+            </div>
         </div>
-        <div className="third-row">
-          <TransactionHistory />
-        </div>
-      </div>
-      {/* <Login /> */}
-    </div>
+        <Login method='CRN, Username or Card Number'/>
+        <Login method='Password'/>
+    </>
   );
 }
 
