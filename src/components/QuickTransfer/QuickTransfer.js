@@ -16,7 +16,7 @@ const QuickTransfer = () => {
               color="#c8c8c8"
               width="24"
               height="24"
-              style={{marginLeft: '-30px', cursor: 'pointer'}}
+              style={{ marginLeft: "-30px", cursor: "pointer" }}
             />
           </div>
           <br />
@@ -32,7 +32,7 @@ const QuickTransfer = () => {
               color="#c8c8c8"
               width="24"
               height="24"
-              style={{marginLeft: '-30px', cursor: 'pointer'}}
+              style={{ marginLeft: "-30px", cursor: "pointer" }}
             />
           </div>
           <br />

@@ -1,12 +1,8 @@
-
-
 .dashboard {
   display: flex;
   background-color: #f8f8f8;
-  /* align-items: center; */
-  font-family: 'Roboto';
+  font-family: "Roboto", "sans-serif";
 }
-/*p { font-family: Futura; font-size: 18px; font-weight: normal; line-height: 26px; }*/
 
 .right_half {
   display: flex;
@@ -18,10 +14,8 @@
 .second_row {
   display: flex;
   flex-direction: row;
-
 }
 .third_row {
   display: flex;
   flex-direction: row;
-
 }

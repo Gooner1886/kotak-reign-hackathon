@@ -2,72 +2,91 @@ import styled from "styled-components";
 import BankLogo from "../assets/Kotak_Mahindra_Bank_logo.png";
 import HeroLogo from "../assets/Scenes02.png";
 import Barcode from "../assets/PngItem_1202489.png";
-import React, {useState} from "react";
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = (props) => {
-    const [text, setText] = useState('');
+  const [text, setText] = useState("");
 
-    const onChangeHandler = (e) => {
-      setText(e.target.value);
-    }
+  const onChangeHandler = (e) => {
+    setText(e.target.value);
+  };
 
-    const resetInputHandler = (e) => {
-      setText('');
-    }
+  const resetInputHandler = (e) => {
+    setText("");
+  };
 
-    return (
-        <Body>
-            <ParentContainer>
-                <LeftContainer>
-                    <HeaderContainer>
-                        <img src={BankLogo} alt="Kotak Logo" />
-                    </HeaderContainer>
-                    <HeroImg>
-                        <img src={HeroLogo} alt="Kotak Logo" />
-                    </HeroImg>
-                </LeftContainer>
-                <RightContainer>
-                    <BarCode>
-                        <img src={Barcode} alt="Kotak Logo" />
-                    </BarCode>
-                    <FormContainer>
-                        <FormChild>
-                            <h2 style={{color: 'white'}}>Log into Kotak</h2>
-                            <p style={{ margin: 0, marginBottom: '40px', color: 'white'}}>Net Banking</p>
-                            <label className="input">
-                                <input
-                                    className="input__field"
-                                    type="text"
-                                    onChange={onChangeHandler}
-                                    placeholder=""
-                                    value={text}/>
-                                <span className="input__label" style={{ color: 'white' }}>{props.method}</span>
-                            </label>
-                            <BelowForm>
-                                <RememberMe>
-                                    <input style={{width: '20px'}} type="checkbox" />
-                                    <p style={{ cursor: 'pointer' }}>Remember Me</p>
-                                </RememberMe>
-                                <p style={{ textDecoration: 'underline', cursor: 'pointer'}}>Use virtual Keyboard</p>
-                            </BelowForm>
-                            <p>Forgot Password</p>
-                            <p style={{marginTop: '10px'}}>By clicking on ‘Next’, you accept that you have read our
-                                Terms & conditions,
-                                Privacy Policy
-                                and the
-                                Tips for Safe Banking.
-                            </p>
-                            <ButtonContainer>
-                                <Link to={props.method === "CRN, Username or Card Number" ? "/password" : "/dashboard"}><button style={{ cursor: 'pointer' }} disabled={text === ""} onClick={resetInputHandler}>Next</button></Link>
-                            </ButtonContainer>
-                        </FormChild>
-                    </FormContainer>
-                </RightContainer>
-            </ParentContainer>
-        </Body>
-    )
-}
+  return (
+    <Body>
+      <ParentContainer>
+        <LeftContainer>
+          <HeaderContainer>
+            <img src={BankLogo} alt="Kotak Logo" />
+          </HeaderContainer>
+          <HeroImg>
+            <img src={HeroLogo} alt="Kotak Logo" />
+          </HeroImg>
+        </LeftContainer>
+        <RightContainer>
+          <BarCode>
+            <img src={Barcode} alt="Kotak Logo" />
+          </BarCode>
+          <FormContainer>
+            <FormChild>
+              <h2 style={{ color: "white" }}>Log into Kotak</h2>
+              <p style={{ margin: 0, marginBottom: "40px", color: "white" }}>
+                Net Banking
+              </p>
+              <label className="input">
+                <input
+                  className="input__field"
+                  type={props.method === "CRN, Username or Card Number" ? "text" : "password"}
+                  onChange={onChangeHandler}
+                  placeholder=""
+                  value={text}
+                />
+                <span className="input__label" style={{ color: "white" }}>
+                  {props.method}
+                </span>
+              </label>
+              <BelowForm>
+                <RememberMe>
+                  <input style={{ width: "20px" }} type="checkbox" />
+                  <p style={{ cursor: "pointer" }}>Remember Me</p>
+                </RememberMe>
+                <p style={{ textDecoration: "underline", cursor: "pointer" }}>
+                  Use virtual Keyboard
+                </p>
+              </BelowForm>
+              <p>Forgot Password</p>
+              <p style={{ marginTop: "10px" }}>
+                By clicking on ‘Next’, you accept that you have read our Terms &
+                conditions, Privacy Policy and the Tips for Safe Banking.
+              </p>
+              <ButtonContainer>
+                <Link
+                  to={
+                    props.method === "CRN, Username or Card Number"
+                      ? "/password"
+                      : "/dashboard"
+                  }
+                >
+                  <button
+                    style={{ cursor: "pointer" }}
+                    disabled={text === ""}
+                    onClick={resetInputHandler}
+                  >
+                    Next
+                  </button>
+                </Link>
+              </ButtonContainer>
+            </FormChild>
+          </FormContainer>
+        </RightContainer>
+      </ParentContainer>
+    </Body>
+  );
+};
 
 export default Login;
 
@@ -76,10 +95,10 @@ const Body = styled.div`
   width: 100vw;
   background: #003874;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  font-family: 'Roboto',sans-serif;
-  
+  font-family: "Roboto", sans-serif;
+
   p {
     color: white;
     margin-top: 6px;
@@ -125,7 +144,7 @@ const HeroImg = styled.div`
   img {
     height: 700px;
     width: 700px;
-    
+
     @media (min-width: 1000px) {
       height: 500px;
       width: 500px;
@@ -168,9 +187,9 @@ const FormContainer = styled.div`
 `;
 
 const FormChild = styled.div`
-    //background: purple;
-    height: 100%;
-    width: 80%;
+  //background: purple;
+  height: 100%;
+  width: 80%;
 `;
 
 const BelowForm = styled.div`
@@ -188,11 +207,11 @@ const ButtonContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-top: 40px;
-  
+
   button {
     width: 90px;
     height: 35px;
-    background: #FF726F;
+    background: #ff726f;
     font-size: 17px;
     border: 1px solid #003874;
   }

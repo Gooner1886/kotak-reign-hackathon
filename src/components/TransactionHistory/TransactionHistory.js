@@ -6,7 +6,7 @@ const TransactionHistory = () => {
   return (
     <div className={classes.transaction_history}>
       <h2>Transaction History</h2>
-      <table style={{marginTop: '15px'}}>
+      <table style={{ marginTop: "15px" }}>
         <thead>
           <tr>
             <th>No.</th>
@@ -39,7 +39,7 @@ const TransactionHistory = () => {
               />
             </th>
           </tr>
-          <tr style={{borderBottom: '1px solid #c9cfda'}}>
+          <tr style={{ borderBottom: "1px solid #c9cfda" }}>
             <th style={{ color: "#c9cfda", fontWeight: "lighter" }}>Search</th>
             <th style={{ color: "#c9cfda", fontWeight: "lighter" }}>Search</th>
             <th style={{ color: "#000", fontWeight: "lighter" }}>
@@ -72,18 +72,23 @@ const TransactionHistory = () => {
           </tr>
         </thead>
         <tbody>
-          <tr style={{borderBottom: '1px solid #c9cfda'}}>
+          <tr style={{ borderBottom: "1px solid #c9cfda" }}>
             <td data-column="First Name">
               <button>9177</button>
             </td>
             <td data-column="Last Name">
-            <Icon icon="simple-icons:adidas" color="#2b2b28" width="50" height="50" />
+              <Icon
+                icon="simple-icons:adidas"
+                color="#2b2b28"
+                width="50"
+                height="50"
+              />
               <p
                 style={{
                   margin: 0,
-                  marginLeft: '65px',
-                  marginTop: '-35px',
-                  marginBottom: '10px'
+                  marginLeft: "65px",
+                  marginTop: "-35px",
+                  marginBottom: "10px",
                 }}
               >
                 Adidas
@@ -108,18 +113,23 @@ const TransactionHistory = () => {
             </td>
             <td data-column="Job Title">&#8377;901.31</td>
           </tr>
-          <tr style={{borderBottom: '1px solid #c9cfda'}}>
+          <tr style={{ borderBottom: "1px solid #c9cfda" }}>
             <td data-column="First Name">
               <button>3064</button>
             </td>
             <td data-column="Last Name">
-            <Icon icon="simple-icons:mcdonalds" color="#ffc72c" width="50" height="50" />
+              <Icon
+                icon="simple-icons:mcdonalds"
+                color="#ffc72c"
+                width="50"
+                height="50"
+              />
               <p
                 style={{
                   margin: 0,
-                  marginLeft: '65px',
-                  marginTop: '-35px',
-                  marginBottom: '10px'
+                  marginLeft: "65px",
+                  marginTop: "-35px",
+                  marginBottom: "10px",
                 }}
               >
                 McDonald's
@@ -144,7 +154,7 @@ const TransactionHistory = () => {
             </td>
             <td data-column="Job Title">&#8377;641.20</td>
           </tr>
-          <tr style={{borderBottom: '1px solid #c9cfda'}}>
+          <tr style={{ borderBottom: "1px solid #c9cfda" }}>
             <td data-column="First Name">
               <button>9195</button>
             </td>
@@ -158,9 +168,9 @@ const TransactionHistory = () => {
               <p
                 style={{
                   margin: 0,
-                  marginLeft: '65px',
-                  marginTop: '-35px',
-                  marginBottom: '10px'   
+                  marginLeft: "65px",
+                  marginTop: "-35px",
+                  marginBottom: "10px",
                 }}
               >
                 Starbucks
@@ -185,7 +195,7 @@ const TransactionHistory = () => {
             </td>
             <td data-column="Job Title">&#8377;510.30</td>
           </tr>
-          <tr style={{borderBottom: '1px solid #c9cfda'}}>
+          <tr style={{ borderBottom: "1px solid #c9cfda" }}>
             <td data-column="First Name">
               <button>3128</button>
             </td>
@@ -199,9 +209,9 @@ const TransactionHistory = () => {
               <p
                 style={{
                   margin: 0,
-                  marginLeft: '65px',
-                  marginTop: '-35px',
-                  marginBottom: '10px'
+                  marginLeft: "65px",
+                  marginTop: "-35px",
+                  marginBottom: "10px",
                 }}
               >
                 Mitsubishi
@@ -226,18 +236,23 @@ const TransactionHistory = () => {
             </td>
             <td data-column="Job Title">&#8377;828.90</td>
           </tr>
-          <tr style={{borderBottom: '1px solid #c9cfda'}}>
+          <tr style={{ borderBottom: "1px solid #c9cfda" }}>
             <td data-column="First Name">
               <button>9892</button>
             </td>
             <td data-column="Last Name">
-            <Icon icon="simple-icons:asus" color="#00539b" width="50" height="50" />
+              <Icon
+                icon="simple-icons:asus"
+                color="#00539b"
+                width="50"
+                height="50"
+              />
               <p
                 style={{
                   margin: 0,
-                  marginLeft: '65px',
-                  marginTop: '-35px',
-                  marginBottom: '10px'
+                  marginLeft: "65px",
+                  marginTop: "-35px",
+                  marginBottom: "10px",
                 }}
               >
                 Asus

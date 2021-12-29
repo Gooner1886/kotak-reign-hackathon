@@ -1,24 +1,22 @@
 .iconsAndLabels {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    padding: 4px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 4px;
+  justify-content: center;
 }
 .icons {
-    transition: 0.2s;
-
+  transition: 0.2s;
 }
 .icons:hover {
-    background: #ffffff;
-
+  background: #dfe7fe;
+  color: #6985DB;
 }
 .labels {
-    transition: 0.2s;
-
+  transition: 0.2s;
 }
 .labels:hover {
-    background: #ffffff;
-
+  background: #dfe7fe;
+  color: #6985DB;
 }

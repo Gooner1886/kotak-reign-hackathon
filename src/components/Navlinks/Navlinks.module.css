@@ -1,12 +1,13 @@
 .NavlinksContent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 85%;
-    height: 100%;
-    border-radius: 20px;
-    transition: 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  transition: 0.2s;
 }
 .NavlinksContent:hover {
-    background: #ffffff;
+  background: #dfe7fe;
+  color: #6985DB;
 }
