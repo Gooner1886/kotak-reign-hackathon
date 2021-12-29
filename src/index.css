@@ -25,6 +25,7 @@ code {
 
 .input {
   position: relative;
+  color: white;
 }
 .input__label {
   position: absolute;

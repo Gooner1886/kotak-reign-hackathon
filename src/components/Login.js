@@ -2,10 +2,15 @@ import styled from "styled-components";
 import BankLogo from "../assets/Kotak_Mahindra_Bank_logo.png";
 import HeroLogo from "../assets/Scenes02.png";
 import Barcode from "../assets/PngItem_1202489.png";
-import classes from "./Sidebar/Sidebar.module.css";
-import React from "react";
+import React, {useState} from "react";
 
-const Login = () => {
+const Login = (props) => {
+    const [text, setText] = useState('');
+
+    const onChangeHandler = (e) => {
+      setText(e.target.value);
+    }
+
     return (
         <Body>
             <ParentContainer>
@@ -26,17 +31,31 @@ const Login = () => {
                             <h2 style={{color: 'white'}}>Log into Kotak</h2>
                             <p style={{ margin: 0, marginBottom: '40px', color: 'white'}}>Net Banking</p>
                             <label className="input">
-                                <input className="input__field" type="text" placeholder=""/>
-                                <span className="input__label" style={{ color: 'white' }}>CRN, Username or Card Number</span>
+                                <input
+                                    className="input__field"
+                                    type="text"
+                                    onChange={onChangeHandler}
+                                    placeholder=""
+                                    value={text}/>
+                                <span className="input__label" style={{ color: 'white' }}>{props.method}</span>
                             </label>
                             <BelowForm>
                                 <RememberMe>
                                     <input type="checkbox"/>
-                                    <p style={{ color: 'white'}}>Remember Me</p>
+                                    <p style={{ cursor: 'pointer' }}>Remember Me</p>
                                 </RememberMe>
-                                <p style={{ color: 'white'}}>Use virtual Keyboard</p>
+                                <p style={{ textDecoration: 'underline', cursor: 'pointer'}}>Use virtual Keyboard</p>
                             </BelowForm>
-
+                            <p>Forgot Password</p>
+                            <p style={{marginTop: '50px'}}>By clicking on ‘Next’, you accept that you have read our
+                                Terms & conditions,
+                                Privacy Policy
+                                and the
+                                Tips for Safe Banking.
+                            </p>
+                            <ButtonContainer>
+                                <button style={{ cursor: 'pointer' }} disabled={text === ""}>Next</button>
+                            </ButtonContainer>
                         </FormChild>
                     </FormContainer>
                 </RightContainer>
@@ -54,6 +73,11 @@ const Body = styled.div`
   display: flex;
   justify-content:center;
   align-items: center;
+  font-family: 'Roboto',sans-serif;
+  
+  p {
+    color: white;
+  }
 `;
 
 const ParentContainer = styled.div`
@@ -77,14 +101,12 @@ const HeaderContainer = styled.div`
   img {
     width: 220px;
     height: 90px;
-    margin-left: 30px;
-    margin-top: 20px;
   }
 `;
 
 const LeftContainer = styled.div`
   //background: salmon;
-  height: 80%;
+  height: 90%;
   width: 50%;
   margin-left: 50px;
   display: flex;
@@ -95,9 +117,8 @@ const LeftContainer = styled.div`
 
 const HeroImg = styled.div`
   img {
-    margin-top: 20px;
-    height: 600px;
-    width: 600px;
+    height: 700px;
+    width: 700px;
   }
 `;
 
@@ -144,4 +165,20 @@ const BelowForm = styled.div`
 
 const RememberMe = styled.div`
   display: flex;
+`;
+
+const ButtonContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+  
+  button {
+    width: 90px;
+    height: 35px;
+    background: #FF726F;
+    font-size: 17px;
+    border: 1px solid #003874;
+  }
 `;
