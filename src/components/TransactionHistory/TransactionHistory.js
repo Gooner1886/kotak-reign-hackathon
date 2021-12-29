@@ -81,9 +81,9 @@ const TransactionHistory = () => {
               <p
                 style={{
                   margin: 0,
-                  position: "absolute",
-                  top: "905px",
-                  left: "540px",
+                  marginLeft: '65px',
+                  marginTop: '-35px',
+                  marginBottom: '10px'
                 }}
               >
                 Adidas
@@ -117,9 +117,9 @@ const TransactionHistory = () => {
               <p
                 style={{
                   margin: 0,
-                  position: "absolute",
-                  top: "985px",
-                  left: "540px",
+                  marginLeft: '65px',
+                  marginTop: '-35px',
+                  marginBottom: '10px'
                 }}
               >
                 McDonald's
@@ -158,9 +158,9 @@ const TransactionHistory = () => {
               <p
                 style={{
                   margin: 0,
-                  position: "absolute",
-                  top: "1060px",
-                  left: "540px",
+                  marginLeft: '65px',
+                  marginTop: '-35px',
+                  marginBottom: '10px'   
                 }}
               >
                 Starbucks
@@ -199,9 +199,9 @@ const TransactionHistory = () => {
               <p
                 style={{
                   margin: 0,
-                  position: "absolute",
-                  top: "1135px",
-                  left: "540px",
+                  marginLeft: '65px',
+                  marginTop: '-35px',
+                  marginBottom: '10px'
                 }}
               >
                 Mitsubishi
@@ -235,9 +235,9 @@ const TransactionHistory = () => {
               <p
                 style={{
                   margin: 0,
-                  position: "absolute",
-                  top: "1210px",
-                  left: "540px",
+                  marginLeft: '65px',
+                  marginTop: '-35px',
+                  marginBottom: '10px'
                 }}
               >
                 Asus
