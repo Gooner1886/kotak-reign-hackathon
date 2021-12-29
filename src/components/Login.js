@@ -46,8 +46,8 @@ const Login = (props) => {
                                 </RememberMe>
                                 <p style={{ textDecoration: 'underline', cursor: 'pointer'}}>Use virtual Keyboard</p>
                             </BelowForm>
-                            <p style={{ marginTop: '20px'}}>Forgot Password</p>
-                            <p style={{marginTop: '50px'}}>By clicking on ‘Next’, you accept that you have read our
+                            <p>Forgot Password</p>
+                            <p style={{marginTop: '10px'}}>By clicking on ‘Next’, you accept that you have read our
                                 Terms & conditions,
                                 Privacy Policy
                                 and the
@@ -120,6 +120,11 @@ const HeroImg = styled.div`
   img {
     height: 700px;
     width: 700px;
+    
+    @media (min-width: 1000px) {
+      height: 500px;
+      width: 500px;
+    }
   }
 `;
 
@@ -141,7 +146,11 @@ const BarCode = styled.div`
   img {
     height: 150px;
     width: 150px;
-  }
+
+    @media (min-width: 1000px) {
+      height: 100px;
+      width: 100px;
+    }
 `;
 
 const FormContainer = styled.div`
