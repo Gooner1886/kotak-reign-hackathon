@@ -1,29 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200&family=Roboto:wght@100;400;700&display=swap');
 
-.App {
-  display: flex;
-  background-color: #f8f8f8;
-  /* align-items: center; */
-  font-family: 'Roboto';
-}
-/*p { font-family: Futura; font-size: 18px; font-weight: normal; line-height: 26px; }*/
 
-.right-half {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-}
-
-.second-row {
-  display: flex;
-  flex-direction: row;
-
-}
-.third-row {
-  display: flex;
-  flex-direction: row;
-
-}
 
 
