@@ -41,12 +41,12 @@ const Login = (props) => {
                             </label>
                             <BelowForm>
                                 <RememberMe>
-                                    <input type="checkbox"/>
+                                    <input style={{width: '20px'}} type="checkbox" />
                                     <p style={{ cursor: 'pointer' }}>Remember Me</p>
                                 </RememberMe>
                                 <p style={{ textDecoration: 'underline', cursor: 'pointer'}}>Use virtual Keyboard</p>
                             </BelowForm>
-                            <p>Forgot Password</p>
+                            <p style={{ marginTop: '20px'}}>Forgot Password</p>
                             <p style={{marginTop: '50px'}}>By clicking on ‘Next’, you accept that you have read our
                                 Terms & conditions,
                                 Privacy Policy
@@ -77,6 +77,7 @@ const Body = styled.div`
   
   p {
     color: white;
+    margin-top: 6px;
   }
 `;
 
