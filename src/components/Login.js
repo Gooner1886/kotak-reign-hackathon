@@ -3,12 +3,17 @@ import BankLogo from "../assets/Kotak_Mahindra_Bank_logo.png";
 import HeroLogo from "../assets/Scenes02.png";
 import Barcode from "../assets/PngItem_1202489.png";
 import React, {useState} from "react";
+import { Link } from 'react-router-dom';
 
 const Login = (props) => {
     const [text, setText] = useState('');
 
     const onChangeHandler = (e) => {
       setText(e.target.value);
+    }
+
+    const resetInputHandler = (e) => {
+      setText('');
     }
 
     return (
@@ -54,7 +59,7 @@ const Login = (props) => {
                                 Tips for Safe Banking.
                             </p>
                             <ButtonContainer>
-                                <button style={{ cursor: 'pointer' }} disabled={text === ""}>Next</button>
+                                <Link to={props.method === "CRN, Username or Card Number" ? "/password" : "/dashboard"}><button style={{ cursor: 'pointer' }} disabled={text === ""} onClick={resetInputHandler}>Next</button></Link>
                             </ButtonContainer>
                         </FormChild>
                     </FormContainer>

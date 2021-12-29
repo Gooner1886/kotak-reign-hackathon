@@ -8,9 +8,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route
-            path="/login"
+            path="/"
             element={<Login method="CRN, Username or Card Number" />}
           ></Route>
           <Route path="/password" element={<Login method="Password" />}></Route>
